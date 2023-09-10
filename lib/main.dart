@@ -10,8 +10,40 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(appBar: AppBar(backgroundColor: Colors.amberAccent,),
-      body: Container(color: Colors.pink, child: Text("Saibyr Aierke")),)
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.gray, 
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                color: Colors.gray, 
+                padding: EdgeInsets.all(3.0),
+                child: Text(
+                  "text",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white, 
+                  ),
+                ),
+              ),
+              SizedBox(height: 20),
+              Container(
+                color: Colors.yellow, 
+                child: Text(
+                  "Saibyr Aierke",
+                  style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.black, 
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
